@@ -1,3 +1,7 @@
+// One Word From Your Ex — entry: "Preventable" (11 characters, one word).
+// Writes the word with no trailing newline to entry.txt.
+// Output-dir resolution order: argv[2] > $MAKEFUN_OUTPUT_DIR > /output,
+// falling back to ./output when an earlier candidate is unwritable.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
